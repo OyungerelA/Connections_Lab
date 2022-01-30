@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Survival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mada&family=Neucha&family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="heading" id="about">
+        <div class="heading__name">
+            <h1>Space Survival</h1>
+            <p>a desktop game</p>
+        </div>
+        <nav class="heading__nav">
+            <!-- <ul class="nav__list">
+                <li class="nav__list-item"><a href="#about">About</a></li>
+                <li class="nav__list-item"><a href="#video">Game</a></li>
+                <li class="nav__list-item"><a href="#description">Description</a></li>
+                <li class="nav__list-item"><a href="#contact">Contact</a></li>
+            </ul> -->
+            <a class="heading__nav-item" href="#about">About</a>
+            <a class="heading__nav-item" href="#video">Game</a>
+            <a class="heading__nav-item" href="#description">Description</a>
+            <a class="heading__nav-item" href="#contact">Contact</a>            
+        </div>
+    </div>
+    <section class="container">
+        <div class="container__img">
+            <!-- <img class="container__img-item" src="images/game1.png" alt="Game Beginning"> -->
+            <img class="container__img-item" src="images/game2.png" alt="Game Instructions">
+            <img class="container__img-item" src="images/game3.png" alt="Game Continue">
+            <!-- <img class="container__img-item" src="images/game4.png" alt="Game Game Continue"> -->
+            <img class="container__img-item" src="images/game5.png" alt="Game Finish">
+        </div>
+        <div class="container__text">
+            <p>Space Survival is an interactive one-player game where an astronaut is positioned at the bottom of the screen and can be moved horizontally within the screen dimensions. Two types of objects descend from sky randomly with a certain speed: meteors which the astronaut must dodge and oxygen that it will try to catch to survive. Multiple objects fall at a given time and the astronaut must be moved accordingly to dodge or catch objects. The game score will be incremented by 1 whenever the astronaut catches a regular oxygen and by 10 when it catches a gold oxygen. If the astronaut fails to dodge a meteor and is hit by it, the game ends and the score will be displayed showing the score and the highest score. Afterwards, the game will restart upon pressing the UP button.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="container__video" id="video">
+            <!-- <iframe src="https://drive.google.com/file/d/1Lw4Vn0A21N3iTkTYlzSIh8szfsUl8t-r/view?resourcekey" frameborder="0"></iframe> -->
+            <video class="video" controls width=20%>
+                <source src="game_video.mp4">  
+                Sorry your browser does not support embedded videos.
+            </video>
+        </div>
+    </section>
+    <section class="container__description">
+        <table class="container__description-table" id="description">
+            <tr class="container__description-row">
+                <td>400 lines of code</td>
+                <td>/</td>
+                <td>Processing & Python</td>
+            </tr>
+            <tr class="container__description-row">
+                <td>3 weeks</td>
+                <td>/</td>
+                <td>Intro to CS course</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="footer" id="contact">
+        <div class="footer__text">
+            <p>Oyungerel Amarsanaa</p>
+            <p>oa853@nyu.edu</p>
+        </div>
+    </section>
+</body>
+
+</html>
