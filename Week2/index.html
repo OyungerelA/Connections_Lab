@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Space+Mono&display=swap" rel="stylesheet">    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="container__img">
+            <img class="img" id="img" src="arrow2.png">
+        </div>
+        <div class="container-left">
+            <h1 class="earning-head">Earning</h1>
+            <div class="input-area">
+                <input class="input-text" id="input-earning-text" type="text" placeholder="Describe your earning">
+                <input class="input-number" id="input-earning-number" type="number" placeholder="Amount">
+                <input class="button" id="button-earning" type="button" value="enter">
+            </div>
+            <div class="display-area" id="earning-display"> 
+                <div class="display-area-text" id="display-earning-text"></div>
+                <div class="display-area-number" id="display-earning-number"></div>
+            </div>
+        </div>
+        <div class="container-right">
+            <h1 class="spending-head">Spending</h1>
+            <div class="input-area">
+                <input class="input-text" id="input-spending-text" type="text" placeholder="Describe your spending">
+                <input class="input-number" id="input-spending-number" type="number" placeholder="Amount">
+                <input class="button" id="button-spending" type="button" value="enter">
+            </div>
+            <div class="display-area" id="spending-display">
+                <div class="display-area-text" id="display-spending-text"></div>
+                <div class="display-area-number" id="display-spending-number"></div>
+            </div>
+        </div>
+    </div>
+    <div class="balance" id="balance"> 
+        <h1 class="balance-text" id="balance-info">Balance: </h1>
+        <h1 class="balance-text" id="balance-num" style="color: #e3d72b">0</h1>
+    </div>
+</body>
+</html>
