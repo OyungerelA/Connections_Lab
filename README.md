@@ -8,5 +8,8 @@ Repository for Spring 2022 Connections Lab course.
 
 [Week 2 Website](https://oyungerela.github.io/Connections_Lab/Week2/)
 
+[Week 3 Data](https://oyungerela.github.io/Connections_Lab/Week3/)
+
+
 
   
