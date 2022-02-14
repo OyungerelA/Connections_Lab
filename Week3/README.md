@@ -6,9 +6,10 @@ See project [here](https://oyungerela.github.io/Connections_Lab/Week3/).
 ## Planning
 Coming up an idea for this project was very challenging. Although I had some ideas for web applications using data fetched from an API, for instance a book search app where the user inputs a genre and I display info on the current bestsellers with that genre, I was not entirely sure how I was going to use p5.js in visualizing the data in such applications. My thinking was that it would make more sense to use a dataset with meaningful numbers so I can use the values to create visualizations. Thus, I tried to look for datasets where the central data consists of number values. While browsing through different datasets and APIs, I came across a [website](https://ourworldindata.org/internet) that had a variety of information about the internet, its users, different applications that are used frequently etc. From there, I found data on some of the most used social media applications with their total user number and how much of the world's population use them by age group. I thought this would make a good topic to do my project on, as we all spend so much time on the internet, on social media and knowing data on knowing about its usage would be informative as well as thought-provoking. It would relay information on the connectedness of our world and the power of technology and social media in bringing people together. 
 
+![](wireframe1.jpg)
+![](wireframe2.jpg)
+![](wireframe3.jpg)
 
-
-![](.jpg)
 
 ## Process
 
