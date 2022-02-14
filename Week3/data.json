@@ -1,0 +1,29 @@
+{
+	"description": "5 most-used social media apps and their user info",
+	"apps": [{
+			"name": "Facebook",
+			"user_num": 2380000000,
+			"user_by_age": [76, 84, 79, 68, 46]
+		},
+		{
+			"name": "Youtube",
+			"user_num": 1900000000,
+			"user_by_age": [90, 93, 87, 70, 38]
+		},
+		{
+			"name": "Instagram",
+			"user_num": 1000000000,
+			"user_by_age": [75, 57, 47, 23, 8]
+		},
+		{
+			"name": "Snapchat",
+			"user_num": 238650000,
+			"user_by_age": [73, 47, 25, 9, 3]
+		},
+		{
+			"name": "Twitter",
+			"user_num": 330000000,
+			"user_by_age": [44, 31, 26, 17, 7]
+		}
+	]
+}
