@@ -1,21 +1,27 @@
 window.addEventListener('load', ()=>{
-    fetch("./data.json")
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
+    let inputBox = document.getElementById('input-text');
+    inputBox.addEventListener('change', (e)=>{
+        let input = e.target.value;
 
-        let apps = data.apps;
+        fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${input}`)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+        
+        let recipe = data.meals;
+        console.log(recipe.length);
 
-        for (let i=0; i<apps.length; i++){
-            let listItem = document.createElement('li');
+        for (let i=0; i<recipe.length; i++){
+            let mealName = document.createElement('p');
+            let mealImg = document.createElement("img");
 
-            listItem.innerHTML = apps[i].name + ' has ' + apps[i].user_num + ' users where ' + apps[i].user_by_age[0] + ' percent of 18-24 year olds, ' + apps[i].user_by_age[1] + ' percent of 25-29 year olds, ' + apps[i].user_by_age[2] + ' percent of 30-49 year olds, ' + apps[i].user_by_age[3] + ' percent of 50-64 year olds, ' + apps[i].user_by_age[4] + ' percent of 65 and above year olds use the app.';
+            mealName.innerHTML = recipe[i].strMeal;
+            mealImg.src = recipe[i].strMealThumb;
 
-            let list = document.getElementById('list');
-            list.appendChild(listItem);
-
-            console.log(listItem);
-            
+            let container = document.getElementById('container-box');
+            container.appendChild(mealName);
+            container.appendChild(mealImg);
         }
+    })
     })
 })
