@@ -1,7 +1,7 @@
 # Connections_Lab_Week3
 Week 3 HW - Make an initial version of your project where data is displayed on the page either on page load or as a result of a user interaction.
 
-See project [here](https://oyungerela.github.io/Connections_Lab/Week3/).
+See updated project [here](https://oyungerela.github.io/Connections_Lab/Week3/).
 
 ## Updated Project Plan
 
