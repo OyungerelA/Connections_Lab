@@ -1,8 +1,26 @@
 body{
-    background-color: azure;
+    background-color: peachpuff;
 }
 
-.list{
-    padding: 3rem;
-    line-height: 3em;
+.container-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-wrap: wrap; */
+    margin: 3rem;
 }
+
+img{
+    width: 60%;
+    padding-bottom: 2rem;
+}
+
+
+.input-text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 1.5rem;
+}
+
