@@ -9,7 +9,7 @@ window.addEventListener('load', ()=>{
             console.log(data);
         
         let recipe = data.meals;
-        console.log(recipe.length);
+//         console.log(recipe.length);
 
         for (let i=0; i<recipe.length; i++){
             let mealName = document.createElement('p');
