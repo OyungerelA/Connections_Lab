@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Recipes</title>
+    <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <!-- linking icon -->
+    <link rel="icon" href="images/icon.png">
+    <!-- linking css & js codes -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- container for the first page of the website -->
+    <div class="container" id="container">
+        <!-- search bar div -->
+        <div class="search-bar">
+            <!-- text input form to ask the user the ingredient they want to use to cook -->
+            <input class="search-txt" id="search-txt" type="text" placeholder="What ingredient are you using to cook" autocomplete="off">
+            <!-- submit button to search for recipes -->
+            <!-- only pressing the search button will make the screen scroll to the recipe list -->
+            <button type="button" id="searchBtn"><a href="#container2"><img class="search-btn" src="images/search-btn.png"></a></button>
+        </div>
+    </div>
+
+    <!-- container for the second page of the website that holds the list of dishes -->
+    <div class="container2" id="container2">
+        <!-- text to show that results are being displayed -->
+        <h2 id="search-result-txt">Showing your search results:  </h2>
+        <!-- when the up button is pressed, the window scrolls back to the search/landing page -->
+        <a href="#container">
+            <!-- up button to easily scroll back to the first landing page -->
+            <img class="up-btn" id="up-btn" src="images/up-btn.png">
+        </a>
+        <!-- div that will hold the list/deck of recipes -->
+        <!-- will be populated once the user inputs a proper ingredient -->
+        <div class="recipe-list" id="recipe-list">
+        </div>
+    </div>
+
+    <!-- container that will hold the instructional information for the individual recipe when the user clicks on a recipe -->
+    <!-- will be populated when the user clicks on a dish recipe -->
+    <div class="recipe-item-info" id="recipe-item-info">
+    </div>
+</body>
+
+</html>
