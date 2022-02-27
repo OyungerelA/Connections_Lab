@@ -1,0 +1,340 @@
+html{
+    background-color: #E7EAD6;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url(images/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-margin-right: 0;
+}
+
+/* container for the landing page */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* search bar div containing the input type text and a submit button */
+/* making it display at the center of the screen with circular borders */
+/* displaying it as flex so that the button and input stays side-by-side */
+.search-bar{
+    background: white;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 450px;
+    border-radius: 40px;
+}
+
+/* where the user inputs the ingredient */
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 15px 15px;
+    font-size: 1rem;
+}
+
+/* submit button for the input form */
+.search-bar button{
+    border: 0;
+    border-radius: 1.2rem;
+    width: 70px;
+    height: 50px;
+    background: transparent;
+}
+
+/* resizing the image of the button and adding cursor when hovered */
+.search-bar button img{
+    width: 45px;
+    cursor: pointer;
+}
+
+/* placeholder text inside the input form, specifying the font and size */
+/* ::placeholder{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+} */
+/*  */
+
+/* specifying the font and size of the font and font size of the placeholder text inside input form */
+input{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    /* width: 50%; */
+}
+
+/* container for the second half of the website, which holds the dish list */
+/* making it span the whole screen and displaying it as flex in the column direction so that the elements will be placed vertically */
+/* giving it a background-color so that the screen looks more organized, based on class feedback */
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 3.8%;
+    display: none;
+    background-color:#E7EAD6;
+    padding-top: 1.5rem;
+}
+
+/* this is for the "Showing your search results" text */
+/* giving it margin to the left so it doesn't stick to the side of the screen */
+.container2 h2{
+    margin-left: 4rem;
+}
+
+/* div containing the dish/recipe list */
+/* displaying it as grid with 4 repeats in a column */
+.recipe-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* div for the individual dish cards */
+/* displaying it as flex in the column direction to position the items vertically */
+/* giving the text background a white color */
+/* specifying the margins between the row of dishes */
+.recipe-item{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    /* width: fit-content; */
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    /* vertical-align: middle; */
+}
+
+/* name of dish on the card */
+.recipe-item h3{
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.5rem;
+    /* vertical-align: middle; */
+}
+
+/* image of the dish on the card */
+/* making the edges circular and making it have cursor when user hovers over it */
+.recipe-img img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* container for the pop-up individual information for a dish */
+/* display is set to none initially and will show up when the user clicks on the dish image */
+.recipe-item-info{
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+}
+
+/* specifying the size of the dish image on the pop-up info */
+.recipe-item-info img{
+    width: 20%;
+}
+
+/* div containing the actual information */
+/* specifying the position, size, color */
+/* some recipes have long instructions, so making the overflow become scrollable */
+.recipe-item-box{
+    width: 60%;
+    background-color:#EE9775;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* video link inside the info box */
+.recipe-item-video{
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+/* specifying color and font weight for the video link */
+.recipe-item-video a{
+    color: #a80720;
+    font-weight: 700;
+}
+
+/* the button used to close the pop-up info box */
+/* positioning at the top right corner of the screen */
+.close-recipe-btn{
+    position: absolute;
+    text-align: center;
+    top: 0.5rem;
+    right: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/* error message that will be displayed when there is invalid input */
+.errorMsg{
+    padding-left: 4rem;
+}
+
+/* up button that scrolls back up to the landing page */
+.up-btn{
+    width: 3%;
+    height: 3%;
+    margin-left: 90%;
+    padding-bottom: 2rem;
+    margin-top: -4rem;
+    cursor: pointer;
+}
+
+/* for responsiveness */
+@media (max-width: 900px){
+    /* only displaying 2 dishes in each row */
+    .recipe-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container2{
+        padding-inline: 7%;
+    }
+
+    /* adjustinf the position of the search result text */
+    .container2 h2{
+        padding-bottom: 2rem;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+
+    /* adjusting the size of the pop-up info box */
+    .recipe-item-box{
+        width: 50%;
+        font-size: 0.9rem;
+        padding-inline: 1rem; 
+    }
+
+    /* adjusting the positioning of the close button */
+    .close-recipe-btn{
+        position: absolute;
+        text-align: center;
+        top: 0.5rem;
+        right: 50%;
+        background-color: white;
+        border-radius: 50%;
+        width: 1.4rem;
+        height: 1.4rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    /* adjusting the size and position of the up-button */
+    .up-btn{
+        width: 5%;
+        height: 5%;
+        margin-left: 80%;
+        padding-bottom: 2rem;
+        margin-top: -4rem;
+        cursor: pointer;
+    }
+}
+
+/* for responsiveness */
+@media (max-width: 700px){
+    /* only displaying one dish per row */
+    .recipe-list{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* adjusting the width of each dish card */
+    .recipe-item{
+        width: 50%;
+    }
+
+    /* adjusting the padding of the dish list screen */
+    .container2{
+        padding-inline: 24%;
+    }
+
+    /* adjusting the positioning of the search result text */
+    .container2 h2{
+        padding-bottom: 2rem;
+        margin-top: 5rem;
+        margin-left: 0.1rem;
+    }
+
+    /* adjusting the size of the pop-up info box */
+    .recipe-item-box{
+        font-size: 0.7rem;
+        width: 50%;
+        padding-inline: 0.5rem;
+    }   
+
+    /* adjusting the position of the close recipe button on the pop-up box */
+    .close-recipe-btn{
+        position: absolute;
+        text-align: center;
+        top: 0.5rem;
+        right: 50%;
+        background-color: white;
+        border-radius: 50%;
+        width: 1.4rem;
+        height: 1.4rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    /* adjusting the size of each dish card */
+    .recipe-item-info{
+        width: 70%;
+    }
+
+    /* adjusting the size and position of the up button */
+    .up-btn{
+        width: 5%;
+        height: 5%;
+        margin-left: 30%;
+        padding-bottom: 2rem;
+        margin-top: -4rem;
+        cursor: pointer;
+    }
+}
