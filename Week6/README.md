@@ -21,7 +21,7 @@ For the webpage, I added a query where the user is able to narrow down the cours
 In terms of serving the static webpage, I decided to add an input form for each query/param so that the user can specify what they are searching for, and based on that, I redirect the webpage to the webpages holding the data. For example, if the user enters "Michael Shiloh" in the input box asking about professor name, I redirect the user by calling the line of code
 
 ```
-  window.location.replace(`http://localhost:8000/courses/michaelshiloh}`);
+  window.location.replace(`http://localhost:8000/courses/michaelshiloh`);
 
 ```
 which will bring the user to a webpage holding all the courses that professor Michael Shiloh is teaching. Since the user is being redirected to a different page, I thought about adding a "go back" button to each webpage, but wasn't sure how I was able to do it since the webpages for serving data can be numerous. Also, when I enter information on two input boxes back to back, I get an error, which I'm guessing is because I'm attempting to change the data on the webpage displayed. But regardless, the webpage works fine. This certainly is a very simple webpage and I want to implement other features and make it more easy and intuitive to use in the future when I get even more familiar with using node. 
