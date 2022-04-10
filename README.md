@@ -20,6 +20,10 @@ Repository for Spring 2022 Connections Lab course.
 
 [Week 8 Website](https://lacy-ginger-mayonnaise.glitch.me/)
 
+[Project 2 Repository](https://github.com/OyungerelA/ProjectTwo)
+
+[Project 2 Website](https://ritzy-rumbling-haumea.glitch.me/)
+
 
 
 
