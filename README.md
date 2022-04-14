@@ -22,7 +22,7 @@ Repository for Spring 2022 Connections Lab course.
 
 [Project 2 Repository](https://github.com/OyungerelA/ProjectTwo)
 
-[Project 2 Website](https://ritzy-rumbling-haumea.glitch.me/)
+[Project 2 Website](https://stick-it.glitch.me/)
 
 
 
