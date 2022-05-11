@@ -24,6 +24,7 @@ Repository for Spring 2022 Connections Lab course.
 
 [Project 2 Website](https://stick-it.glitch.me/)
 
+[Project 3 Repository](https://github.com/OyungerelA/ProjectThree)
 
 
 
